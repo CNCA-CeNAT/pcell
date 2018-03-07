@@ -1,0 +1,16 @@
+called: gcc
+	/home/okeanos/Desktop/PCell
+	gcc
+	-Wall
+	-g
+	-O
+	convection_main.c
+	-o
+	convection
+	-lforms
+	-L/usr/X11R6/lib
+	-lX11
+	-lXext
+	-lXpm
+	-lm
+

@@ -1,0 +1,117 @@
+set terminal x11 
+set parametric 
+set cntrparam levels 40 
+set cntrparam bspline 
+set pointsize 0.1 
+set contour base 
+set view 0,90 
+set nosurface 
+set noxtics 
+set noytics 
+set noztics 
+set nolabel 
+set noclabel 
+set style line 1 
+set style function lines 
+splot "PCELL0.DAT" notitle w lines 
+splot "PCELL1.DAT" notitle w lines 
+splot "PCELL2.DAT" notitle w lines 
+splot "PCELL3.DAT" notitle w lines 
+splot "PCELL4.DAT" notitle w lines 
+splot "PCELL5.DAT" notitle w lines 
+splot "PCELL6.DAT" notitle w lines 
+splot "PCELL7.DAT" notitle w lines 
+splot "PCELL8.DAT" notitle w lines 
+splot "PCELL9.DAT" notitle w lines 
+splot "PCELL10.DAT" notitle w lines 
+splot "PCELL11.DAT" notitle w lines 
+splot "PCELL12.DAT" notitle w lines 
+splot "PCELL13.DAT" notitle w lines 
+splot "PCELL14.DAT" notitle w lines 
+splot "PCELL15.DAT" notitle w lines 
+splot "PCELL16.DAT" notitle w lines 
+splot "PCELL17.DAT" notitle w lines 
+splot "PCELL18.DAT" notitle w lines 
+splot "PCELL19.DAT" notitle w lines 
+splot "PCELL20.DAT" notitle w lines 
+splot "PCELL21.DAT" notitle w lines 
+splot "PCELL22.DAT" notitle w lines 
+splot "PCELL23.DAT" notitle w lines 
+splot "PCELL24.DAT" notitle w lines 
+splot "PCELL25.DAT" notitle w lines 
+splot "PCELL26.DAT" notitle w lines 
+splot "PCELL27.DAT" notitle w lines 
+splot "PCELL28.DAT" notitle w lines 
+splot "PCELL29.DAT" notitle w lines 
+splot "PCELL30.DAT" notitle w lines 
+splot "PCELL31.DAT" notitle w lines 
+splot "PCELL32.DAT" notitle w lines 
+splot "PCELL33.DAT" notitle w lines 
+splot "PCELL34.DAT" notitle w lines 
+splot "PCELL35.DAT" notitle w lines 
+splot "PCELL36.DAT" notitle w lines 
+splot "PCELL37.DAT" notitle w lines 
+splot "PCELL38.DAT" notitle w lines 
+splot "PCELL39.DAT" notitle w lines 
+splot "PCELL40.DAT" notitle w lines 
+splot "PCELL41.DAT" notitle w lines 
+splot "PCELL42.DAT" notitle w lines 
+splot "PCELL43.DAT" notitle w lines 
+splot "PCELL44.DAT" notitle w lines 
+splot "PCELL45.DAT" notitle w lines 
+splot "PCELL46.DAT" notitle w lines 
+splot "PCELL47.DAT" notitle w lines 
+splot "PCELL48.DAT" notitle w lines 
+splot "PCELL49.DAT" notitle w lines 
+splot "PCELL50.DAT" notitle w lines 
+splot "PCELL51.DAT" notitle w lines 
+splot "PCELL52.DAT" notitle w lines 
+splot "PCELL53.DAT" notitle w lines 
+splot "PCELL54.DAT" notitle w lines 
+splot "PCELL55.DAT" notitle w lines 
+splot "PCELL56.DAT" notitle w lines 
+splot "PCELL57.DAT" notitle w lines 
+splot "PCELL58.DAT" notitle w lines 
+splot "PCELL59.DAT" notitle w lines 
+splot "PCELL60.DAT" notitle w lines 
+splot "PCELL61.DAT" notitle w lines 
+splot "PCELL62.DAT" notitle w lines 
+splot "PCELL63.DAT" notitle w lines 
+splot "PCELL64.DAT" notitle w lines 
+splot "PCELL65.DAT" notitle w lines 
+splot "PCELL66.DAT" notitle w lines 
+splot "PCELL67.DAT" notitle w lines 
+splot "PCELL68.DAT" notitle w lines 
+splot "PCELL69.DAT" notitle w lines 
+splot "PCELL70.DAT" notitle w lines 
+splot "PCELL71.DAT" notitle w lines 
+splot "PCELL72.DAT" notitle w lines 
+splot "PCELL73.DAT" notitle w lines 
+splot "PCELL74.DAT" notitle w lines 
+splot "PCELL75.DAT" notitle w lines 
+splot "PCELL76.DAT" notitle w lines 
+splot "PCELL77.DAT" notitle w lines 
+splot "PCELL78.DAT" notitle w lines 
+splot "PCELL79.DAT" notitle w lines 
+splot "PCELL80.DAT" notitle w lines 
+splot "PCELL81.DAT" notitle w lines 
+splot "PCELL82.DAT" notitle w lines 
+splot "PCELL83.DAT" notitle w lines 
+splot "PCELL84.DAT" notitle w lines 
+splot "PCELL85.DAT" notitle w lines 
+splot "PCELL86.DAT" notitle w lines 
+splot "PCELL87.DAT" notitle w lines 
+splot "PCELL88.DAT" notitle w lines 
+splot "PCELL89.DAT" notitle w lines 
+splot "PCELL90.DAT" notitle w lines 
+splot "PCELL91.DAT" notitle w lines 
+splot "PCELL92.DAT" notitle w lines 
+splot "PCELL93.DAT" notitle w lines 
+splot "PCELL94.DAT" notitle w lines 
+splot "PCELL95.DAT" notitle w lines 
+splot "PCELL96.DAT" notitle w lines 
+splot "PCELL97.DAT" notitle w lines 
+splot "PCELL98.DAT" notitle w lines 
+splot "PCELL99.DAT" notitle w lines 
+pause 5 
+quit 

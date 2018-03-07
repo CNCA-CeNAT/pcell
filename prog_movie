@@ -1,0 +1,1015 @@
+set terminal png 
+set parametric 
+set cntrparam levels 40 
+set cntrparam bspline 
+set pointsize 0.1 
+set contour base 
+set view 0,90 
+set nosurface 
+set noxtics 
+set noytics 
+set noztics 
+set nolabel 
+set noclabel 
+set style line 1 
+set output "convection0.png" 
+splot "PCELL0.DAT" notitle w lines 
+set output "convection1.png" 
+splot "PCELL1.DAT" notitle w lines 
+set output "convection2.png" 
+splot "PCELL2.DAT" notitle w lines 
+set output "convection3.png" 
+splot "PCELL3.DAT" notitle w lines 
+set output "convection4.png" 
+splot "PCELL4.DAT" notitle w lines 
+set output "convection5.png" 
+splot "PCELL5.DAT" notitle w lines 
+set output "convection6.png" 
+splot "PCELL6.DAT" notitle w lines 
+set output "convection7.png" 
+splot "PCELL7.DAT" notitle w lines 
+set output "convection8.png" 
+splot "PCELL8.DAT" notitle w lines 
+set output "convection9.png" 
+splot "PCELL9.DAT" notitle w lines 
+set output "convection10.png" 
+splot "PCELL10.DAT" notitle w lines 
+set output "convection11.png" 
+splot "PCELL11.DAT" notitle w lines 
+set output "convection12.png" 
+splot "PCELL12.DAT" notitle w lines 
+set output "convection13.png" 
+splot "PCELL13.DAT" notitle w lines 
+set output "convection14.png" 
+splot "PCELL14.DAT" notitle w lines 
+set output "convection15.png" 
+splot "PCELL15.DAT" notitle w lines 
+set output "convection16.png" 
+splot "PCELL16.DAT" notitle w lines 
+set output "convection17.png" 
+splot "PCELL17.DAT" notitle w lines 
+set output "convection18.png" 
+splot "PCELL18.DAT" notitle w lines 
+set output "convection19.png" 
+splot "PCELL19.DAT" notitle w lines 
+set output "convection20.png" 
+splot "PCELL20.DAT" notitle w lines 
+set output "convection21.png" 
+splot "PCELL21.DAT" notitle w lines 
+set output "convection22.png" 
+splot "PCELL22.DAT" notitle w lines 
+set output "convection23.png" 
+splot "PCELL23.DAT" notitle w lines 
+set output "convection24.png" 
+splot "PCELL24.DAT" notitle w lines 
+set output "convection25.png" 
+splot "PCELL25.DAT" notitle w lines 
+set output "convection26.png" 
+splot "PCELL26.DAT" notitle w lines 
+set output "convection27.png" 
+splot "PCELL27.DAT" notitle w lines 
+set output "convection28.png" 
+splot "PCELL28.DAT" notitle w lines 
+set output "convection29.png" 
+splot "PCELL29.DAT" notitle w lines 
+set output "convection30.png" 
+splot "PCELL30.DAT" notitle w lines 
+set output "convection31.png" 
+splot "PCELL31.DAT" notitle w lines 
+set output "convection32.png" 
+splot "PCELL32.DAT" notitle w lines 
+set output "convection33.png" 
+splot "PCELL33.DAT" notitle w lines 
+set output "convection34.png" 
+splot "PCELL34.DAT" notitle w lines 
+set output "convection35.png" 
+splot "PCELL35.DAT" notitle w lines 
+set output "convection36.png" 
+splot "PCELL36.DAT" notitle w lines 
+set output "convection37.png" 
+splot "PCELL37.DAT" notitle w lines 
+set output "convection38.png" 
+splot "PCELL38.DAT" notitle w lines 
+set output "convection39.png" 
+splot "PCELL39.DAT" notitle w lines 
+set output "convection40.png" 
+splot "PCELL40.DAT" notitle w lines 
+set output "convection41.png" 
+splot "PCELL41.DAT" notitle w lines 
+set output "convection42.png" 
+splot "PCELL42.DAT" notitle w lines 
+set output "convection43.png" 
+splot "PCELL43.DAT" notitle w lines 
+set output "convection44.png" 
+splot "PCELL44.DAT" notitle w lines 
+set output "convection45.png" 
+splot "PCELL45.DAT" notitle w lines 
+set output "convection46.png" 
+splot "PCELL46.DAT" notitle w lines 
+set output "convection47.png" 
+splot "PCELL47.DAT" notitle w lines 
+set output "convection48.png" 
+splot "PCELL48.DAT" notitle w lines 
+set output "convection49.png" 
+splot "PCELL49.DAT" notitle w lines 
+set output "convection50.png" 
+splot "PCELL50.DAT" notitle w lines 
+set output "convection51.png" 
+splot "PCELL51.DAT" notitle w lines 
+set output "convection52.png" 
+splot "PCELL52.DAT" notitle w lines 
+set output "convection53.png" 
+splot "PCELL53.DAT" notitle w lines 
+set output "convection54.png" 
+splot "PCELL54.DAT" notitle w lines 
+set output "convection55.png" 
+splot "PCELL55.DAT" notitle w lines 
+set output "convection56.png" 
+splot "PCELL56.DAT" notitle w lines 
+set output "convection57.png" 
+splot "PCELL57.DAT" notitle w lines 
+set output "convection58.png" 
+splot "PCELL58.DAT" notitle w lines 
+set output "convection59.png" 
+splot "PCELL59.DAT" notitle w lines 
+set output "convection60.png" 
+splot "PCELL60.DAT" notitle w lines 
+set output "convection61.png" 
+splot "PCELL61.DAT" notitle w lines 
+set output "convection62.png" 
+splot "PCELL62.DAT" notitle w lines 
+set output "convection63.png" 
+splot "PCELL63.DAT" notitle w lines 
+set output "convection64.png" 
+splot "PCELL64.DAT" notitle w lines 
+set output "convection65.png" 
+splot "PCELL65.DAT" notitle w lines 
+set output "convection66.png" 
+splot "PCELL66.DAT" notitle w lines 
+set output "convection67.png" 
+splot "PCELL67.DAT" notitle w lines 
+set output "convection68.png" 
+splot "PCELL68.DAT" notitle w lines 
+set output "convection69.png" 
+splot "PCELL69.DAT" notitle w lines 
+set output "convection70.png" 
+splot "PCELL70.DAT" notitle w lines 
+set output "convection71.png" 
+splot "PCELL71.DAT" notitle w lines 
+set output "convection72.png" 
+splot "PCELL72.DAT" notitle w lines 
+set output "convection73.png" 
+splot "PCELL73.DAT" notitle w lines 
+set output "convection74.png" 
+splot "PCELL74.DAT" notitle w lines 
+set output "convection75.png" 
+splot "PCELL75.DAT" notitle w lines 
+set output "convection76.png" 
+splot "PCELL76.DAT" notitle w lines 
+set output "convection77.png" 
+splot "PCELL77.DAT" notitle w lines 
+set output "convection78.png" 
+splot "PCELL78.DAT" notitle w lines 
+set output "convection79.png" 
+splot "PCELL79.DAT" notitle w lines 
+set output "convection80.png" 
+splot "PCELL80.DAT" notitle w lines 
+set output "convection81.png" 
+splot "PCELL81.DAT" notitle w lines 
+set output "convection82.png" 
+splot "PCELL82.DAT" notitle w lines 
+set output "convection83.png" 
+splot "PCELL83.DAT" notitle w lines 
+set output "convection84.png" 
+splot "PCELL84.DAT" notitle w lines 
+set output "convection85.png" 
+splot "PCELL85.DAT" notitle w lines 
+set output "convection86.png" 
+splot "PCELL86.DAT" notitle w lines 
+set output "convection87.png" 
+splot "PCELL87.DAT" notitle w lines 
+set output "convection88.png" 
+splot "PCELL88.DAT" notitle w lines 
+set output "convection89.png" 
+splot "PCELL89.DAT" notitle w lines 
+set output "convection90.png" 
+splot "PCELL90.DAT" notitle w lines 
+set output "convection91.png" 
+splot "PCELL91.DAT" notitle w lines 
+set output "convection92.png" 
+splot "PCELL92.DAT" notitle w lines 
+set output "convection93.png" 
+splot "PCELL93.DAT" notitle w lines 
+set output "convection94.png" 
+splot "PCELL94.DAT" notitle w lines 
+set output "convection95.png" 
+splot "PCELL95.DAT" notitle w lines 
+set output "convection96.png" 
+splot "PCELL96.DAT" notitle w lines 
+set output "convection97.png" 
+splot "PCELL97.DAT" notitle w lines 
+set output "convection98.png" 
+splot "PCELL98.DAT" notitle w lines 
+set output "convection99.png" 
+splot "PCELL99.DAT" notitle w lines 
+set output "convection100.png" 
+splot "PCELL100.DAT" notitle w lines 
+set output "convection101.png" 
+splot "PCELL101.DAT" notitle w lines 
+set output "convection102.png" 
+splot "PCELL102.DAT" notitle w lines 
+set output "convection103.png" 
+splot "PCELL103.DAT" notitle w lines 
+set output "convection104.png" 
+splot "PCELL104.DAT" notitle w lines 
+set output "convection105.png" 
+splot "PCELL105.DAT" notitle w lines 
+set output "convection106.png" 
+splot "PCELL106.DAT" notitle w lines 
+set output "convection107.png" 
+splot "PCELL107.DAT" notitle w lines 
+set output "convection108.png" 
+splot "PCELL108.DAT" notitle w lines 
+set output "convection109.png" 
+splot "PCELL109.DAT" notitle w lines 
+set output "convection110.png" 
+splot "PCELL110.DAT" notitle w lines 
+set output "convection111.png" 
+splot "PCELL111.DAT" notitle w lines 
+set output "convection112.png" 
+splot "PCELL112.DAT" notitle w lines 
+set output "convection113.png" 
+splot "PCELL113.DAT" notitle w lines 
+set output "convection114.png" 
+splot "PCELL114.DAT" notitle w lines 
+set output "convection115.png" 
+splot "PCELL115.DAT" notitle w lines 
+set output "convection116.png" 
+splot "PCELL116.DAT" notitle w lines 
+set output "convection117.png" 
+splot "PCELL117.DAT" notitle w lines 
+set output "convection118.png" 
+splot "PCELL118.DAT" notitle w lines 
+set output "convection119.png" 
+splot "PCELL119.DAT" notitle w lines 
+set output "convection120.png" 
+splot "PCELL120.DAT" notitle w lines 
+set output "convection121.png" 
+splot "PCELL121.DAT" notitle w lines 
+set output "convection122.png" 
+splot "PCELL122.DAT" notitle w lines 
+set output "convection123.png" 
+splot "PCELL123.DAT" notitle w lines 
+set output "convection124.png" 
+splot "PCELL124.DAT" notitle w lines 
+set output "convection125.png" 
+splot "PCELL125.DAT" notitle w lines 
+set output "convection126.png" 
+splot "PCELL126.DAT" notitle w lines 
+set output "convection127.png" 
+splot "PCELL127.DAT" notitle w lines 
+set output "convection128.png" 
+splot "PCELL128.DAT" notitle w lines 
+set output "convection129.png" 
+splot "PCELL129.DAT" notitle w lines 
+set output "convection130.png" 
+splot "PCELL130.DAT" notitle w lines 
+set output "convection131.png" 
+splot "PCELL131.DAT" notitle w lines 
+set output "convection132.png" 
+splot "PCELL132.DAT" notitle w lines 
+set output "convection133.png" 
+splot "PCELL133.DAT" notitle w lines 
+set output "convection134.png" 
+splot "PCELL134.DAT" notitle w lines 
+set output "convection135.png" 
+splot "PCELL135.DAT" notitle w lines 
+set output "convection136.png" 
+splot "PCELL136.DAT" notitle w lines 
+set output "convection137.png" 
+splot "PCELL137.DAT" notitle w lines 
+set output "convection138.png" 
+splot "PCELL138.DAT" notitle w lines 
+set output "convection139.png" 
+splot "PCELL139.DAT" notitle w lines 
+set output "convection140.png" 
+splot "PCELL140.DAT" notitle w lines 
+set output "convection141.png" 
+splot "PCELL141.DAT" notitle w lines 
+set output "convection142.png" 
+splot "PCELL142.DAT" notitle w lines 
+set output "convection143.png" 
+splot "PCELL143.DAT" notitle w lines 
+set output "convection144.png" 
+splot "PCELL144.DAT" notitle w lines 
+set output "convection145.png" 
+splot "PCELL145.DAT" notitle w lines 
+set output "convection146.png" 
+splot "PCELL146.DAT" notitle w lines 
+set output "convection147.png" 
+splot "PCELL147.DAT" notitle w lines 
+set output "convection148.png" 
+splot "PCELL148.DAT" notitle w lines 
+set output "convection149.png" 
+splot "PCELL149.DAT" notitle w lines 
+set output "convection150.png" 
+splot "PCELL150.DAT" notitle w lines 
+set output "convection151.png" 
+splot "PCELL151.DAT" notitle w lines 
+set output "convection152.png" 
+splot "PCELL152.DAT" notitle w lines 
+set output "convection153.png" 
+splot "PCELL153.DAT" notitle w lines 
+set output "convection154.png" 
+splot "PCELL154.DAT" notitle w lines 
+set output "convection155.png" 
+splot "PCELL155.DAT" notitle w lines 
+set output "convection156.png" 
+splot "PCELL156.DAT" notitle w lines 
+set output "convection157.png" 
+splot "PCELL157.DAT" notitle w lines 
+set output "convection158.png" 
+splot "PCELL158.DAT" notitle w lines 
+set output "convection159.png" 
+splot "PCELL159.DAT" notitle w lines 
+set output "convection160.png" 
+splot "PCELL160.DAT" notitle w lines 
+set output "convection161.png" 
+splot "PCELL161.DAT" notitle w lines 
+set output "convection162.png" 
+splot "PCELL162.DAT" notitle w lines 
+set output "convection163.png" 
+splot "PCELL163.DAT" notitle w lines 
+set output "convection164.png" 
+splot "PCELL164.DAT" notitle w lines 
+set output "convection165.png" 
+splot "PCELL165.DAT" notitle w lines 
+set output "convection166.png" 
+splot "PCELL166.DAT" notitle w lines 
+set output "convection167.png" 
+splot "PCELL167.DAT" notitle w lines 
+set output "convection168.png" 
+splot "PCELL168.DAT" notitle w lines 
+set output "convection169.png" 
+splot "PCELL169.DAT" notitle w lines 
+set output "convection170.png" 
+splot "PCELL170.DAT" notitle w lines 
+set output "convection171.png" 
+splot "PCELL171.DAT" notitle w lines 
+set output "convection172.png" 
+splot "PCELL172.DAT" notitle w lines 
+set output "convection173.png" 
+splot "PCELL173.DAT" notitle w lines 
+set output "convection174.png" 
+splot "PCELL174.DAT" notitle w lines 
+set output "convection175.png" 
+splot "PCELL175.DAT" notitle w lines 
+set output "convection176.png" 
+splot "PCELL176.DAT" notitle w lines 
+set output "convection177.png" 
+splot "PCELL177.DAT" notitle w lines 
+set output "convection178.png" 
+splot "PCELL178.DAT" notitle w lines 
+set output "convection179.png" 
+splot "PCELL179.DAT" notitle w lines 
+set output "convection180.png" 
+splot "PCELL180.DAT" notitle w lines 
+set output "convection181.png" 
+splot "PCELL181.DAT" notitle w lines 
+set output "convection182.png" 
+splot "PCELL182.DAT" notitle w lines 
+set output "convection183.png" 
+splot "PCELL183.DAT" notitle w lines 
+set output "convection184.png" 
+splot "PCELL184.DAT" notitle w lines 
+set output "convection185.png" 
+splot "PCELL185.DAT" notitle w lines 
+set output "convection186.png" 
+splot "PCELL186.DAT" notitle w lines 
+set output "convection187.png" 
+splot "PCELL187.DAT" notitle w lines 
+set output "convection188.png" 
+splot "PCELL188.DAT" notitle w lines 
+set output "convection189.png" 
+splot "PCELL189.DAT" notitle w lines 
+set output "convection190.png" 
+splot "PCELL190.DAT" notitle w lines 
+set output "convection191.png" 
+splot "PCELL191.DAT" notitle w lines 
+set output "convection192.png" 
+splot "PCELL192.DAT" notitle w lines 
+set output "convection193.png" 
+splot "PCELL193.DAT" notitle w lines 
+set output "convection194.png" 
+splot "PCELL194.DAT" notitle w lines 
+set output "convection195.png" 
+splot "PCELL195.DAT" notitle w lines 
+set output "convection196.png" 
+splot "PCELL196.DAT" notitle w lines 
+set output "convection197.png" 
+splot "PCELL197.DAT" notitle w lines 
+set output "convection198.png" 
+splot "PCELL198.DAT" notitle w lines 
+set output "convection199.png" 
+splot "PCELL199.DAT" notitle w lines 
+set output "convection200.png" 
+splot "PCELL200.DAT" notitle w lines 
+set output "convection201.png" 
+splot "PCELL201.DAT" notitle w lines 
+set output "convection202.png" 
+splot "PCELL202.DAT" notitle w lines 
+set output "convection203.png" 
+splot "PCELL203.DAT" notitle w lines 
+set output "convection204.png" 
+splot "PCELL204.DAT" notitle w lines 
+set output "convection205.png" 
+splot "PCELL205.DAT" notitle w lines 
+set output "convection206.png" 
+splot "PCELL206.DAT" notitle w lines 
+set output "convection207.png" 
+splot "PCELL207.DAT" notitle w lines 
+set output "convection208.png" 
+splot "PCELL208.DAT" notitle w lines 
+set output "convection209.png" 
+splot "PCELL209.DAT" notitle w lines 
+set output "convection210.png" 
+splot "PCELL210.DAT" notitle w lines 
+set output "convection211.png" 
+splot "PCELL211.DAT" notitle w lines 
+set output "convection212.png" 
+splot "PCELL212.DAT" notitle w lines 
+set output "convection213.png" 
+splot "PCELL213.DAT" notitle w lines 
+set output "convection214.png" 
+splot "PCELL214.DAT" notitle w lines 
+set output "convection215.png" 
+splot "PCELL215.DAT" notitle w lines 
+set output "convection216.png" 
+splot "PCELL216.DAT" notitle w lines 
+set output "convection217.png" 
+splot "PCELL217.DAT" notitle w lines 
+set output "convection218.png" 
+splot "PCELL218.DAT" notitle w lines 
+set output "convection219.png" 
+splot "PCELL219.DAT" notitle w lines 
+set output "convection220.png" 
+splot "PCELL220.DAT" notitle w lines 
+set output "convection221.png" 
+splot "PCELL221.DAT" notitle w lines 
+set output "convection222.png" 
+splot "PCELL222.DAT" notitle w lines 
+set output "convection223.png" 
+splot "PCELL223.DAT" notitle w lines 
+set output "convection224.png" 
+splot "PCELL224.DAT" notitle w lines 
+set output "convection225.png" 
+splot "PCELL225.DAT" notitle w lines 
+set output "convection226.png" 
+splot "PCELL226.DAT" notitle w lines 
+set output "convection227.png" 
+splot "PCELL227.DAT" notitle w lines 
+set output "convection228.png" 
+splot "PCELL228.DAT" notitle w lines 
+set output "convection229.png" 
+splot "PCELL229.DAT" notitle w lines 
+set output "convection230.png" 
+splot "PCELL230.DAT" notitle w lines 
+set output "convection231.png" 
+splot "PCELL231.DAT" notitle w lines 
+set output "convection232.png" 
+splot "PCELL232.DAT" notitle w lines 
+set output "convection233.png" 
+splot "PCELL233.DAT" notitle w lines 
+set output "convection234.png" 
+splot "PCELL234.DAT" notitle w lines 
+set output "convection235.png" 
+splot "PCELL235.DAT" notitle w lines 
+set output "convection236.png" 
+splot "PCELL236.DAT" notitle w lines 
+set output "convection237.png" 
+splot "PCELL237.DAT" notitle w lines 
+set output "convection238.png" 
+splot "PCELL238.DAT" notitle w lines 
+set output "convection239.png" 
+splot "PCELL239.DAT" notitle w lines 
+set output "convection240.png" 
+splot "PCELL240.DAT" notitle w lines 
+set output "convection241.png" 
+splot "PCELL241.DAT" notitle w lines 
+set output "convection242.png" 
+splot "PCELL242.DAT" notitle w lines 
+set output "convection243.png" 
+splot "PCELL243.DAT" notitle w lines 
+set output "convection244.png" 
+splot "PCELL244.DAT" notitle w lines 
+set output "convection245.png" 
+splot "PCELL245.DAT" notitle w lines 
+set output "convection246.png" 
+splot "PCELL246.DAT" notitle w lines 
+set output "convection247.png" 
+splot "PCELL247.DAT" notitle w lines 
+set output "convection248.png" 
+splot "PCELL248.DAT" notitle w lines 
+set output "convection249.png" 
+splot "PCELL249.DAT" notitle w lines 
+set output "convection250.png" 
+splot "PCELL250.DAT" notitle w lines 
+set output "convection251.png" 
+splot "PCELL251.DAT" notitle w lines 
+set output "convection252.png" 
+splot "PCELL252.DAT" notitle w lines 
+set output "convection253.png" 
+splot "PCELL253.DAT" notitle w lines 
+set output "convection254.png" 
+splot "PCELL254.DAT" notitle w lines 
+set output "convection255.png" 
+splot "PCELL255.DAT" notitle w lines 
+set output "convection256.png" 
+splot "PCELL256.DAT" notitle w lines 
+set output "convection257.png" 
+splot "PCELL257.DAT" notitle w lines 
+set output "convection258.png" 
+splot "PCELL258.DAT" notitle w lines 
+set output "convection259.png" 
+splot "PCELL259.DAT" notitle w lines 
+set output "convection260.png" 
+splot "PCELL260.DAT" notitle w lines 
+set output "convection261.png" 
+splot "PCELL261.DAT" notitle w lines 
+set output "convection262.png" 
+splot "PCELL262.DAT" notitle w lines 
+set output "convection263.png" 
+splot "PCELL263.DAT" notitle w lines 
+set output "convection264.png" 
+splot "PCELL264.DAT" notitle w lines 
+set output "convection265.png" 
+splot "PCELL265.DAT" notitle w lines 
+set output "convection266.png" 
+splot "PCELL266.DAT" notitle w lines 
+set output "convection267.png" 
+splot "PCELL267.DAT" notitle w lines 
+set output "convection268.png" 
+splot "PCELL268.DAT" notitle w lines 
+set output "convection269.png" 
+splot "PCELL269.DAT" notitle w lines 
+set output "convection270.png" 
+splot "PCELL270.DAT" notitle w lines 
+set output "convection271.png" 
+splot "PCELL271.DAT" notitle w lines 
+set output "convection272.png" 
+splot "PCELL272.DAT" notitle w lines 
+set output "convection273.png" 
+splot "PCELL273.DAT" notitle w lines 
+set output "convection274.png" 
+splot "PCELL274.DAT" notitle w lines 
+set output "convection275.png" 
+splot "PCELL275.DAT" notitle w lines 
+set output "convection276.png" 
+splot "PCELL276.DAT" notitle w lines 
+set output "convection277.png" 
+splot "PCELL277.DAT" notitle w lines 
+set output "convection278.png" 
+splot "PCELL278.DAT" notitle w lines 
+set output "convection279.png" 
+splot "PCELL279.DAT" notitle w lines 
+set output "convection280.png" 
+splot "PCELL280.DAT" notitle w lines 
+set output "convection281.png" 
+splot "PCELL281.DAT" notitle w lines 
+set output "convection282.png" 
+splot "PCELL282.DAT" notitle w lines 
+set output "convection283.png" 
+splot "PCELL283.DAT" notitle w lines 
+set output "convection284.png" 
+splot "PCELL284.DAT" notitle w lines 
+set output "convection285.png" 
+splot "PCELL285.DAT" notitle w lines 
+set output "convection286.png" 
+splot "PCELL286.DAT" notitle w lines 
+set output "convection287.png" 
+splot "PCELL287.DAT" notitle w lines 
+set output "convection288.png" 
+splot "PCELL288.DAT" notitle w lines 
+set output "convection289.png" 
+splot "PCELL289.DAT" notitle w lines 
+set output "convection290.png" 
+splot "PCELL290.DAT" notitle w lines 
+set output "convection291.png" 
+splot "PCELL291.DAT" notitle w lines 
+set output "convection292.png" 
+splot "PCELL292.DAT" notitle w lines 
+set output "convection293.png" 
+splot "PCELL293.DAT" notitle w lines 
+set output "convection294.png" 
+splot "PCELL294.DAT" notitle w lines 
+set output "convection295.png" 
+splot "PCELL295.DAT" notitle w lines 
+set output "convection296.png" 
+splot "PCELL296.DAT" notitle w lines 
+set output "convection297.png" 
+splot "PCELL297.DAT" notitle w lines 
+set output "convection298.png" 
+splot "PCELL298.DAT" notitle w lines 
+set output "convection299.png" 
+splot "PCELL299.DAT" notitle w lines 
+set output "convection300.png" 
+splot "PCELL300.DAT" notitle w lines 
+set output "convection301.png" 
+splot "PCELL301.DAT" notitle w lines 
+set output "convection302.png" 
+splot "PCELL302.DAT" notitle w lines 
+set output "convection303.png" 
+splot "PCELL303.DAT" notitle w lines 
+set output "convection304.png" 
+splot "PCELL304.DAT" notitle w lines 
+set output "convection305.png" 
+splot "PCELL305.DAT" notitle w lines 
+set output "convection306.png" 
+splot "PCELL306.DAT" notitle w lines 
+set output "convection307.png" 
+splot "PCELL307.DAT" notitle w lines 
+set output "convection308.png" 
+splot "PCELL308.DAT" notitle w lines 
+set output "convection309.png" 
+splot "PCELL309.DAT" notitle w lines 
+set output "convection310.png" 
+splot "PCELL310.DAT" notitle w lines 
+set output "convection311.png" 
+splot "PCELL311.DAT" notitle w lines 
+set output "convection312.png" 
+splot "PCELL312.DAT" notitle w lines 
+set output "convection313.png" 
+splot "PCELL313.DAT" notitle w lines 
+set output "convection314.png" 
+splot "PCELL314.DAT" notitle w lines 
+set output "convection315.png" 
+splot "PCELL315.DAT" notitle w lines 
+set output "convection316.png" 
+splot "PCELL316.DAT" notitle w lines 
+set output "convection317.png" 
+splot "PCELL317.DAT" notitle w lines 
+set output "convection318.png" 
+splot "PCELL318.DAT" notitle w lines 
+set output "convection319.png" 
+splot "PCELL319.DAT" notitle w lines 
+set output "convection320.png" 
+splot "PCELL320.DAT" notitle w lines 
+set output "convection321.png" 
+splot "PCELL321.DAT" notitle w lines 
+set output "convection322.png" 
+splot "PCELL322.DAT" notitle w lines 
+set output "convection323.png" 
+splot "PCELL323.DAT" notitle w lines 
+set output "convection324.png" 
+splot "PCELL324.DAT" notitle w lines 
+set output "convection325.png" 
+splot "PCELL325.DAT" notitle w lines 
+set output "convection326.png" 
+splot "PCELL326.DAT" notitle w lines 
+set output "convection327.png" 
+splot "PCELL327.DAT" notitle w lines 
+set output "convection328.png" 
+splot "PCELL328.DAT" notitle w lines 
+set output "convection329.png" 
+splot "PCELL329.DAT" notitle w lines 
+set output "convection330.png" 
+splot "PCELL330.DAT" notitle w lines 
+set output "convection331.png" 
+splot "PCELL331.DAT" notitle w lines 
+set output "convection332.png" 
+splot "PCELL332.DAT" notitle w lines 
+set output "convection333.png" 
+splot "PCELL333.DAT" notitle w lines 
+set output "convection334.png" 
+splot "PCELL334.DAT" notitle w lines 
+set output "convection335.png" 
+splot "PCELL335.DAT" notitle w lines 
+set output "convection336.png" 
+splot "PCELL336.DAT" notitle w lines 
+set output "convection337.png" 
+splot "PCELL337.DAT" notitle w lines 
+set output "convection338.png" 
+splot "PCELL338.DAT" notitle w lines 
+set output "convection339.png" 
+splot "PCELL339.DAT" notitle w lines 
+set output "convection340.png" 
+splot "PCELL340.DAT" notitle w lines 
+set output "convection341.png" 
+splot "PCELL341.DAT" notitle w lines 
+set output "convection342.png" 
+splot "PCELL342.DAT" notitle w lines 
+set output "convection343.png" 
+splot "PCELL343.DAT" notitle w lines 
+set output "convection344.png" 
+splot "PCELL344.DAT" notitle w lines 
+set output "convection345.png" 
+splot "PCELL345.DAT" notitle w lines 
+set output "convection346.png" 
+splot "PCELL346.DAT" notitle w lines 
+set output "convection347.png" 
+splot "PCELL347.DAT" notitle w lines 
+set output "convection348.png" 
+splot "PCELL348.DAT" notitle w lines 
+set output "convection349.png" 
+splot "PCELL349.DAT" notitle w lines 
+set output "convection350.png" 
+splot "PCELL350.DAT" notitle w lines 
+set output "convection351.png" 
+splot "PCELL351.DAT" notitle w lines 
+set output "convection352.png" 
+splot "PCELL352.DAT" notitle w lines 
+set output "convection353.png" 
+splot "PCELL353.DAT" notitle w lines 
+set output "convection354.png" 
+splot "PCELL354.DAT" notitle w lines 
+set output "convection355.png" 
+splot "PCELL355.DAT" notitle w lines 
+set output "convection356.png" 
+splot "PCELL356.DAT" notitle w lines 
+set output "convection357.png" 
+splot "PCELL357.DAT" notitle w lines 
+set output "convection358.png" 
+splot "PCELL358.DAT" notitle w lines 
+set output "convection359.png" 
+splot "PCELL359.DAT" notitle w lines 
+set output "convection360.png" 
+splot "PCELL360.DAT" notitle w lines 
+set output "convection361.png" 
+splot "PCELL361.DAT" notitle w lines 
+set output "convection362.png" 
+splot "PCELL362.DAT" notitle w lines 
+set output "convection363.png" 
+splot "PCELL363.DAT" notitle w lines 
+set output "convection364.png" 
+splot "PCELL364.DAT" notitle w lines 
+set output "convection365.png" 
+splot "PCELL365.DAT" notitle w lines 
+set output "convection366.png" 
+splot "PCELL366.DAT" notitle w lines 
+set output "convection367.png" 
+splot "PCELL367.DAT" notitle w lines 
+set output "convection368.png" 
+splot "PCELL368.DAT" notitle w lines 
+set output "convection369.png" 
+splot "PCELL369.DAT" notitle w lines 
+set output "convection370.png" 
+splot "PCELL370.DAT" notitle w lines 
+set output "convection371.png" 
+splot "PCELL371.DAT" notitle w lines 
+set output "convection372.png" 
+splot "PCELL372.DAT" notitle w lines 
+set output "convection373.png" 
+splot "PCELL373.DAT" notitle w lines 
+set output "convection374.png" 
+splot "PCELL374.DAT" notitle w lines 
+set output "convection375.png" 
+splot "PCELL375.DAT" notitle w lines 
+set output "convection376.png" 
+splot "PCELL376.DAT" notitle w lines 
+set output "convection377.png" 
+splot "PCELL377.DAT" notitle w lines 
+set output "convection378.png" 
+splot "PCELL378.DAT" notitle w lines 
+set output "convection379.png" 
+splot "PCELL379.DAT" notitle w lines 
+set output "convection380.png" 
+splot "PCELL380.DAT" notitle w lines 
+set output "convection381.png" 
+splot "PCELL381.DAT" notitle w lines 
+set output "convection382.png" 
+splot "PCELL382.DAT" notitle w lines 
+set output "convection383.png" 
+splot "PCELL383.DAT" notitle w lines 
+set output "convection384.png" 
+splot "PCELL384.DAT" notitle w lines 
+set output "convection385.png" 
+splot "PCELL385.DAT" notitle w lines 
+set output "convection386.png" 
+splot "PCELL386.DAT" notitle w lines 
+set output "convection387.png" 
+splot "PCELL387.DAT" notitle w lines 
+set output "convection388.png" 
+splot "PCELL388.DAT" notitle w lines 
+set output "convection389.png" 
+splot "PCELL389.DAT" notitle w lines 
+set output "convection390.png" 
+splot "PCELL390.DAT" notitle w lines 
+set output "convection391.png" 
+splot "PCELL391.DAT" notitle w lines 
+set output "convection392.png" 
+splot "PCELL392.DAT" notitle w lines 
+set output "convection393.png" 
+splot "PCELL393.DAT" notitle w lines 
+set output "convection394.png" 
+splot "PCELL394.DAT" notitle w lines 
+set output "convection395.png" 
+splot "PCELL395.DAT" notitle w lines 
+set output "convection396.png" 
+splot "PCELL396.DAT" notitle w lines 
+set output "convection397.png" 
+splot "PCELL397.DAT" notitle w lines 
+set output "convection398.png" 
+splot "PCELL398.DAT" notitle w lines 
+set output "convection399.png" 
+splot "PCELL399.DAT" notitle w lines 
+set output "convection400.png" 
+splot "PCELL400.DAT" notitle w lines 
+set output "convection401.png" 
+splot "PCELL401.DAT" notitle w lines 
+set output "convection402.png" 
+splot "PCELL402.DAT" notitle w lines 
+set output "convection403.png" 
+splot "PCELL403.DAT" notitle w lines 
+set output "convection404.png" 
+splot "PCELL404.DAT" notitle w lines 
+set output "convection405.png" 
+splot "PCELL405.DAT" notitle w lines 
+set output "convection406.png" 
+splot "PCELL406.DAT" notitle w lines 
+set output "convection407.png" 
+splot "PCELL407.DAT" notitle w lines 
+set output "convection408.png" 
+splot "PCELL408.DAT" notitle w lines 
+set output "convection409.png" 
+splot "PCELL409.DAT" notitle w lines 
+set output "convection410.png" 
+splot "PCELL410.DAT" notitle w lines 
+set output "convection411.png" 
+splot "PCELL411.DAT" notitle w lines 
+set output "convection412.png" 
+splot "PCELL412.DAT" notitle w lines 
+set output "convection413.png" 
+splot "PCELL413.DAT" notitle w lines 
+set output "convection414.png" 
+splot "PCELL414.DAT" notitle w lines 
+set output "convection415.png" 
+splot "PCELL415.DAT" notitle w lines 
+set output "convection416.png" 
+splot "PCELL416.DAT" notitle w lines 
+set output "convection417.png" 
+splot "PCELL417.DAT" notitle w lines 
+set output "convection418.png" 
+splot "PCELL418.DAT" notitle w lines 
+set output "convection419.png" 
+splot "PCELL419.DAT" notitle w lines 
+set output "convection420.png" 
+splot "PCELL420.DAT" notitle w lines 
+set output "convection421.png" 
+splot "PCELL421.DAT" notitle w lines 
+set output "convection422.png" 
+splot "PCELL422.DAT" notitle w lines 
+set output "convection423.png" 
+splot "PCELL423.DAT" notitle w lines 
+set output "convection424.png" 
+splot "PCELL424.DAT" notitle w lines 
+set output "convection425.png" 
+splot "PCELL425.DAT" notitle w lines 
+set output "convection426.png" 
+splot "PCELL426.DAT" notitle w lines 
+set output "convection427.png" 
+splot "PCELL427.DAT" notitle w lines 
+set output "convection428.png" 
+splot "PCELL428.DAT" notitle w lines 
+set output "convection429.png" 
+splot "PCELL429.DAT" notitle w lines 
+set output "convection430.png" 
+splot "PCELL430.DAT" notitle w lines 
+set output "convection431.png" 
+splot "PCELL431.DAT" notitle w lines 
+set output "convection432.png" 
+splot "PCELL432.DAT" notitle w lines 
+set output "convection433.png" 
+splot "PCELL433.DAT" notitle w lines 
+set output "convection434.png" 
+splot "PCELL434.DAT" notitle w lines 
+set output "convection435.png" 
+splot "PCELL435.DAT" notitle w lines 
+set output "convection436.png" 
+splot "PCELL436.DAT" notitle w lines 
+set output "convection437.png" 
+splot "PCELL437.DAT" notitle w lines 
+set output "convection438.png" 
+splot "PCELL438.DAT" notitle w lines 
+set output "convection439.png" 
+splot "PCELL439.DAT" notitle w lines 
+set output "convection440.png" 
+splot "PCELL440.DAT" notitle w lines 
+set output "convection441.png" 
+splot "PCELL441.DAT" notitle w lines 
+set output "convection442.png" 
+splot "PCELL442.DAT" notitle w lines 
+set output "convection443.png" 
+splot "PCELL443.DAT" notitle w lines 
+set output "convection444.png" 
+splot "PCELL444.DAT" notitle w lines 
+set output "convection445.png" 
+splot "PCELL445.DAT" notitle w lines 
+set output "convection446.png" 
+splot "PCELL446.DAT" notitle w lines 
+set output "convection447.png" 
+splot "PCELL447.DAT" notitle w lines 
+set output "convection448.png" 
+splot "PCELL448.DAT" notitle w lines 
+set output "convection449.png" 
+splot "PCELL449.DAT" notitle w lines 
+set output "convection450.png" 
+splot "PCELL450.DAT" notitle w lines 
+set output "convection451.png" 
+splot "PCELL451.DAT" notitle w lines 
+set output "convection452.png" 
+splot "PCELL452.DAT" notitle w lines 
+set output "convection453.png" 
+splot "PCELL453.DAT" notitle w lines 
+set output "convection454.png" 
+splot "PCELL454.DAT" notitle w lines 
+set output "convection455.png" 
+splot "PCELL455.DAT" notitle w lines 
+set output "convection456.png" 
+splot "PCELL456.DAT" notitle w lines 
+set output "convection457.png" 
+splot "PCELL457.DAT" notitle w lines 
+set output "convection458.png" 
+splot "PCELL458.DAT" notitle w lines 
+set output "convection459.png" 
+splot "PCELL459.DAT" notitle w lines 
+set output "convection460.png" 
+splot "PCELL460.DAT" notitle w lines 
+set output "convection461.png" 
+splot "PCELL461.DAT" notitle w lines 
+set output "convection462.png" 
+splot "PCELL462.DAT" notitle w lines 
+set output "convection463.png" 
+splot "PCELL463.DAT" notitle w lines 
+set output "convection464.png" 
+splot "PCELL464.DAT" notitle w lines 
+set output "convection465.png" 
+splot "PCELL465.DAT" notitle w lines 
+set output "convection466.png" 
+splot "PCELL466.DAT" notitle w lines 
+set output "convection467.png" 
+splot "PCELL467.DAT" notitle w lines 
+set output "convection468.png" 
+splot "PCELL468.DAT" notitle w lines 
+set output "convection469.png" 
+splot "PCELL469.DAT" notitle w lines 
+set output "convection470.png" 
+splot "PCELL470.DAT" notitle w lines 
+set output "convection471.png" 
+splot "PCELL471.DAT" notitle w lines 
+set output "convection472.png" 
+splot "PCELL472.DAT" notitle w lines 
+set output "convection473.png" 
+splot "PCELL473.DAT" notitle w lines 
+set output "convection474.png" 
+splot "PCELL474.DAT" notitle w lines 
+set output "convection475.png" 
+splot "PCELL475.DAT" notitle w lines 
+set output "convection476.png" 
+splot "PCELL476.DAT" notitle w lines 
+set output "convection477.png" 
+splot "PCELL477.DAT" notitle w lines 
+set output "convection478.png" 
+splot "PCELL478.DAT" notitle w lines 
+set output "convection479.png" 
+splot "PCELL479.DAT" notitle w lines 
+set output "convection480.png" 
+splot "PCELL480.DAT" notitle w lines 
+set output "convection481.png" 
+splot "PCELL481.DAT" notitle w lines 
+set output "convection482.png" 
+splot "PCELL482.DAT" notitle w lines 
+set output "convection483.png" 
+splot "PCELL483.DAT" notitle w lines 
+set output "convection484.png" 
+splot "PCELL484.DAT" notitle w lines 
+set output "convection485.png" 
+splot "PCELL485.DAT" notitle w lines 
+set output "convection486.png" 
+splot "PCELL486.DAT" notitle w lines 
+set output "convection487.png" 
+splot "PCELL487.DAT" notitle w lines 
+set output "convection488.png" 
+splot "PCELL488.DAT" notitle w lines 
+set output "convection489.png" 
+splot "PCELL489.DAT" notitle w lines 
+set output "convection490.png" 
+splot "PCELL490.DAT" notitle w lines 
+set output "convection491.png" 
+splot "PCELL491.DAT" notitle w lines 
+set output "convection492.png" 
+splot "PCELL492.DAT" notitle w lines 
+set output "convection493.png" 
+splot "PCELL493.DAT" notitle w lines 
+set output "convection494.png" 
+splot "PCELL494.DAT" notitle w lines 
+set output "convection495.png" 
+splot "PCELL495.DAT" notitle w lines 
+set output "convection496.png" 
+splot "PCELL496.DAT" notitle w lines 
+set output "convection497.png" 
+splot "PCELL497.DAT" notitle w lines 
+set output "convection498.png" 
+splot "PCELL498.DAT" notitle w lines 
+set output "convection499.png" 
+splot "PCELL499.DAT" notitle w lines 
+quit 

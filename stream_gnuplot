@@ -1,0 +1,18 @@
+set terminal x11 
+set parametric 
+set cntrparam levels 40 
+set cntrparam bspline 
+set pointsize 0.1 
+set contour base 
+set view 0,90 
+set nosurface 
+set noxtics 
+set noytics 
+set noztics 
+set nolabel 
+set noclabel 
+set style line 1 
+set style function lines 
+splot "STREAM.DAT" notitle w lines
+pause 5 
+quit 
