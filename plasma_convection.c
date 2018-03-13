@@ -7,17 +7,17 @@
 
 /* Table of constant values */
 
-#define xdim        101
+/*#define xdim        101
 #define ydim        101
 #define tdim        201
-#define vdim        xdim * ydim
+#define vdim        xdim * ydim*/
 
 // #define ndim        3 * 999
 
-#define adim        vdim * tdim
+// #define adim        vdim * tdim
 
 // #define pdim        3 * vdim
-
+/*
 #define vx(i, j)    vx[(i) + (j) * xdim]
 #define vy(i, j)    vy[(i) + (j) * xdim]
 #define b(i, j)     b[(i) + (j) * xdim]
@@ -26,21 +26,22 @@
 #define em2(i, j)   em2[(i) + (j) * xdim]
 #define a(i, j, k)  a[(i) + ((j) + (k) * ydim) * xdim]
 #define a2(i, j, k) a2[(i) + ((j) + (k) * ydim) * xdim]
+*/
 
-int convec_plasma(double reyn, double parm, int nf);
-int convect(double *, double *, int);
+int convec_plasma(double reyn, double parm, int nf, int id, int jd);
+int convect(double *, double *, int, int, int);
 void itoa(int n, char *s);
 void reverse(char *s);
-int mean_field(double nx_i, double nx_f, double ny_i, double ny_f);
+int mean_field(double nx_i, double nx_f, double ny_i, double ny_f, int, int, int);
 double nx_i, nx_f, ny_i, ny_f;
 
 /* Main program */ 
 
-int convec_plasma(double reyn, double parm, int nf)
+int convec_plasma(double reyn, double parm, int nf, int id, int jd)
 {  
   int n;
   for(n = 1; n <= nf; ++n) {
-    convect(&reyn, &parm, n);
+    convect(&reyn, &parm, n, id, jd);
   } 
   return 0;
 } 
@@ -58,16 +59,17 @@ int convec_plasma(double reyn, double parm, int nf)
 
 /* Subroutine */ 
 
-int convect(double *rey, double *param, int nf)
+int convect(double *rey, double *param, int nf, int id, int jd)
 {
   /* System generated locals */
-  
+  int vdim = id * jd;
+  int adim = vdim * nf;
   int i_1, i_2, i_3, i_4;
   double d_0; 
   /* Local variables */
   /* a[2050401] was [101][101][201] */
   
-  static float a[adim];	
+  float a[adim];	
 
   static int i, j;
   static double l, m;
@@ -79,7 +81,7 @@ int convect(double *rey, double *param, int nf)
   /* vx[10201] was vx[101][101] */ 
   /* vy[10201] was vy[101][101] */ 
 
-  static float vx[vdim], vy[vdim], cda, cdb;
+  float vx[vdim], vy[vdim], cda, cdb;
   static int cha, che, can;
   static double pad;
   static int cen;
@@ -108,7 +110,9 @@ int convect(double *rey, double *param, int nf)
     i_2 = (int) ny;
 	
     for(j = 0; j <= i_2; ++j) {
-      fscanf(test1, "%f", (float *) &a(i, j, 0));
+        //fscanf(test1, "%f", (float *) &a(i, j, 0));
+        fscanf(test1, "%f", (float *) &a[(i) + ((j) + (0) * jd) * id]);
+        
     }
   }
   
@@ -122,7 +126,8 @@ int convect(double *rey, double *param, int nf)
     i_1 = (int) ny;
 	
     for(j = 0; j <= i_1; ++j) {
-      fscanf(test, "%f", (float *) &a(i, j, 1));
+      //fscanf(test, "%f", (float *) &a(i, j, 1));
+        fscanf(test, "%f", (float *) &a[(i) + ((j) + (1) * jd) * id]);
     }
   }
    
@@ -152,13 +157,14 @@ int convect(double *rey, double *param, int nf)
       
       d_0 = ta;
 
-      vx(i, j) = la * (8.0 / M_PI) * (d_0 * (d_0 * d_0)) * (j * dy - 0.5) * ka;
+      //vx(i, j) = la * (8.0 / M_PI) * (d_0 * (d_0 * d_0)) * (j * dy - 0.5) * ka;
 
       /* Computing 4th power */
       
       d_0 = ta, d_0 *= d_0;
       
-      vy(i, j) = d_0 * d_0 * (1.0 / (4.0 * M_PI)) 
+      //vy(i, j) = d_0 * d_0 * (1.0 / (4.0 * M_PI)) 
+      vx[(i) + (j) * id] = d_0 * d_0 * (1.0 / (4.0 * M_PI)) 
 	* (- M_PI * la * na + (1.0 - *param) * 8.0 * ka * (i * dx - 0.5));
     }
   }
@@ -351,7 +357,7 @@ int convect(double *rey, double *param, int nf)
 	      }
 
 	      /* Values of each term used to calculate the potential */
-	      
+	      /*
 	      pau = vx((int) mu, j);
 	      peu = vx((int) mu, (int) ms);
 	      piu = vx((int) mu, (int) mc);
@@ -359,7 +365,7 @@ int convect(double *rey, double *param, int nf)
 	      ped = vy((int) mt, (j + s));
 	      pid = vy((int) md, (j + s));
 	      rau = a((int) mu, j, (n + 1));
-	      reu = a((int) md, j, (n + z));
+              reu = a((int) md, j, (n + z));
 	      riu = a((int) mu, (int) ms, (n + 1));
 	      rou = a((int) mu, (int) mc, (n + 1));
 	      rad = a(i, (j + s), (n + 1));
@@ -370,29 +376,48 @@ int convect(double *rey, double *param, int nf)
 	      qb = a((int) qbc, j, (n + 1));
 	      qc = a(i, (int) qcc, (n + 1));
 	      qd = a(i, (int) qdc, (n + 1));
-	      
+	      */
+              
+              pau = vx[(int)mu + j * id];
+              peu = vx[(int)mu + (int)ms * id];
+              piu = vx[(int)mu + (int)mc * id];
+              pad = vy[i + (j+s) * id];
+              ped = vy[(int)mt + (j+s) * id];
+              pid = vy[(int)md + (j+s) * id];
+              rau = a[(int)mu + j*id + (n+1)*(id*jd)];
+              reu = a[(int)md + j*id + (n+z)*(id*jd)];
+              riu = a[(int)mu + (int)ms*id + (n+1)*(id*jd)];
+              rou = a[(int)mu + (int)mc*id + (n+1)*(id*jd)];
+              rad = a[i + (j+s)*id + (n+1)*(id*jd)];
+              red = a[i + (int)mc*id + (n+z)*(id*jd)];
+              rid = a[(int)mt + (j+s)*id + (n+1)*(id*jd)];
+              rod = a[(int)md + (j+s)*id + (n+1)*(id*jd)];
+              qa = a[(int)qac + j*id + (n+1)*(id*jd)];
+              qb = a[(int)qbc + j*id + (n+1)*(id*jd)];
+              qc = a[i + (int)qcc*id + (n+1)*(id*jd)];
+              qd = a[i + (int)qdc*id + (n+1)*(id*jd)];
 	      /* Values of these term at the boundaries */
 
 	      if(cu == 1) {
-		pau = vx((int) (nx - 1), j) - vy((int) nx, (j + 1)) 
-		  + vy((int) nx, (j - 1));
+		pau = vx[(int) (nx - 1) + j*id] - vy[(int) nx + (j + 1)*id] 
+		  + vy[(int) nx + (j - 1)*id];
 		
 		if((double) j != ny - 1 && (double) j != ny - 2) {
-		  peu = vx((int) (nx - 1), (j + 2)) - vy((int) nx, (j + 3)) 
-		    + vy((int) nx, (j + 1));
+		  peu = vx[(int) (nx - 1) + (j + 2)*id] - vy[(int) nx + (j + 3)*id] 
+		    + vy[(int) nx + (j + 1)*id];
 		}
 		
 		if(j != 1 && j != 2) {
-		  piu = vx((int) (nx - 1), (j - 2)) - vy((int) nx, (j - 1)) 
-		    + vy((int) nx, (j - 3));
+		  piu = vx[(int) (nx - 1) + (j - 2)*id] - vy[(int) nx + (j - 1)*id] 
+		    + vy[(int) nx + (j - 3)*id];
 		}
 		
 		if((double) j == ny - 2) {
-		  peu = vx((int) (nx - 1), (int) ny);
+		  peu = vx[(int) (nx - 1) + (int) ny*id];
 		}
 		
 		if(j == 2) {
-		  piu = vx((int) (nx - 1), 0);
+		  piu = vx[(int) (nx - 1) + 0*id];
 		}
 		
 		if(j == 1 || (double) j == ny - 1) {
@@ -406,22 +431,22 @@ int convect(double *rey, double *param, int nf)
 	      }
 		
 	      if(cu == 2) {
-		pau = vx(1, j) + vy(0, (j + 1)) - vy(0, (j - 1));
+		pau = vx[1 + j*id] + vy[0 + (j + 1)*id] - vy[0 + (j - 1)*id];
 		
 		if((double) j != ny - 1 && (double) j != ny - 2) {
-		  peu = vx(1, (j + 2)) + vy(0, (j + 3)) - vy(0, (j + 1));
+		  peu = vx[1 + (j + 2)*id] + vy[0 + (j + 3)*id] - vy[0 + (j + 1)*id];
 		}
 		
 		if(j != 1 && j != 2) {
-		  piu = vx(1, (j - 2)) + vy(0, (j - 1)) - vy(0, (j - 3));
+		  piu = vx[1 + (j - 2)*id] + vy[0 + (j - 1)*id] - vy[0 + (j - 3) * id];
 		}
 		
 		if((double) j == ny - 2) {
-		  peu = vx(1, (int) ny);
+		  peu = vx[1 + (int) ny*id];
 		}
 		
 		if(j == 2) {
-		  piu = vx(1, 0);
+		  piu = vx[1 + 0*id];
 		}
 		
 		if(j == 1 || (double) j == ny - 1) {
@@ -460,13 +485,13 @@ int convect(double *rey, double *param, int nf)
 		
 	      if(cu == 3) {
 		piu = 0.0;
-		rou = a((int) mu, 1, (n + 1));
-		red = a(i, 1, (n + z));
+		rou = a[(int) mu + 1 * id + (n + 1)*(id*jd)];
+		red = a[i + 1*id + (n + z)*(id*jd)];
 	      }
 	      
 	      if(cu == 4) {
 		peu = 0.0;
-		riu = a((int) mu, (int) (ny - 1), (n + 1));
+		riu = a[(int) mu + (int) (ny - 1)*id + (n + 1)*(id*jd)];
 	      }
 	      
 	      /* Calculation of the potencial */
@@ -497,8 +522,8 @@ int convect(double *rey, double *param, int nf)
 		
 	    cc = l * (qa + qb) + m * (qc + qd);
 	    fe = fa + cc;
-	    fi = fe + a(i, j, n) * cda;
-	    a(i, j, (n + 2)) = fi / cdb;
+	    fi = fe + a[i + j*id + n*(id*jd)] * cda;
+	    a[i + j*id + (n + 2)*(id*jd)] = fi / cdb;
 	  }
 	}
 	
@@ -517,8 +542,8 @@ int convect(double *rey, double *param, int nf)
     i_2 = (int) nx;
 	
     for(i = 0; i <= i_2; ++i) {
-      a(i, 0, (n + 2)) = a(i, 0, n);
-      a(i, (int) ny, (n + 2)) = a(i, (int) ny, n);
+      a[i + 0 *id + (n + 2)*(id*jd)] = a[i + 0 * id  + n*(id*jd)];
+      a[i +(int) ny*id + (n + 2)*(id*jd)] = a[i + (int) ny*id + n*(id*jd)];
     }
   }
     
@@ -532,7 +557,7 @@ int convect(double *rey, double *param, int nf)
     i_1 = (int) ny;
 	
     for(j = 0; j <= i_1; ++j) {
-      fprintf(test1, " %11.8f ", a(i, j, n));
+      fprintf(test1, " %11.8f ", a[i + j*id + n*(id*jd)]);
     }
   }
 
@@ -544,7 +569,7 @@ int convect(double *rey, double *param, int nf)
     i_1 = (int) ny;
 	
     for(j = 0; j <= i_1; ++j) {
-      fprintf(test2, " %11.8f \n", a(i, j, n));
+      fprintf(test2, " %11.8f \n", a[i + j*id + n*(id*jd)]);
     }
   }
 
@@ -558,7 +583,7 @@ int convect(double *rey, double *param, int nf)
     i_2 = (int) ny;
     
     for(j = 0; j <= i_2; ++j) {
-      fprintf(test, " %11.8f \n", a(i, j, (n + 1)));
+      fprintf(test, " %11.8f \n", a[i + j*id + (n + 1)*(id*jd)]);
       
       if((double) j == ny) {
 	fprintf(test, "\n");
@@ -568,7 +593,7 @@ int convect(double *rey, double *param, int nf)
 
   fclose(test);
 
-  mean_field(nx_i, nx_f, ny_i, ny_f);
+  mean_field(nx_i, nx_f, ny_i, ny_f, id, jd, nf);
   
   /* Writing concatenation */
   
@@ -615,7 +640,7 @@ int convect(double *rey, double *param, int nf)
 
 /* mean_field */
 
-int mean_field(double nx_i, double nx_f, double ny_i, double ny_f)
+int mean_field(double nx_i, double nx_f, double ny_i, double ny_f, int id, int jd, int nf)
 {
   /* System generated locals */
   
@@ -634,19 +659,22 @@ int mean_field(double nx_i, double nx_f, double ny_i, double ny_f)
 
   // static float a[pdim], a2[pdim], b[vdim];
 
-  static float a[adim], a2[adim], b[vdim];
+  int vdim = id * jd;
+  int adim = vdim * nf;
+  float a[adim], a2[adim], b[vdim];
   static int i, j;
   static double l, l2, m, m2;
   static int n;
 
   /* em[10201] was em[101][101] */
 
-  static double ee, em[vdim], em2[vdim], diff[vdim], dx, nx, ny, eme;
+  double ee, em[vdim], em2[vdim], diff[vdim], dx, nx, ny, eme;
 
   FILE *potential, *meanfield, *difference;
-  
+  /*
   nx = 100.0;
   ny = 100.0;
+  */
   n  = 0;
   dx = 1.0f / nx;
 
@@ -664,7 +692,7 @@ int mean_field(double nx_i, double nx_f, double ny_i, double ny_f)
     i_2 = (int) ny;
 
     for(j = 0; j <= i_2; ++j) {
-      fscanf(potential, "%f", (float *) &a(i, j, n));
+      fscanf(potential, "%f", (float *) &a[i + j*id + n*(id*jd)]);
     }
   }
   
@@ -676,7 +704,7 @@ int mean_field(double nx_i, double nx_f, double ny_i, double ny_f)
     i_2 = (int) ny;
 
     for(j = 0; j <= i_2; ++j) {
-      fscanf(difference, "%f", (float *) &a2(i, j, n));
+      fscanf(difference, "%f", (float *) &a2[i + j*id + n*(id*jd)]);
     }
   }
   
@@ -694,35 +722,35 @@ int mean_field(double nx_i, double nx_f, double ny_i, double ny_f)
       } else {
 	// [i + 1 + (j + n * 101) * 101]
 
-	m  = a(i + 1, j, n); 
-	m2 = a2(i + 1, j, n); 
+	m  = a[i+1 + j*id + n*(id*jd)]; 
+	m2 = a2[i + 1 + j*id + n*(id*jd)]; 
       }
       
       if((double) j == ny) {
 	// [i + (j - 1 + n * 101) * 101]
 	
-	l  = a(i, j - 1, n); 
-	l2 = a2(i, j - 1, n); 
+	l  = a[i + (j - 1)*id + n*(id*jd)]; 
+	l2 = a2[i + (j - 1)*id + n*(id*jd)]; 
       } else {
 	// [i + (j + 1 + n * 101) * 101]
 
-	l  = a(i, j + 1, n);
-	l2 = a2(i, j + 1, n);
+	l  = a[i + (j + 1)*id + n*(id*jd)];
+	l2 = a2[i + (j + 1)*id + n*(id*jd)];
       }
       
       /* Computing 2nd power */
       
       // [i + (j + n * 101) * 101]
       
-      d_1 = l - a(i, j, n);
-      f_1 = l2 - a2(i, j, n);
+      d_1 = l - a[i + j*id + n*(id*jd)];
+      f_1 = l2 - a2[i + j*id + n*(id*jd)];
 
       /* Computing 2nd power */
       
       // [i + (j + n * 101) * 101]
 
-      d_2 = m - a(i, j, n);
-      f_2 = m2 - a2(i, j, n);
+      d_2 = m - a[i + j*id + n*(id*jd)];
+      f_2 = m2 - a2[i + j*id + n*(id*jd)];
 
       /* Computing 2nd power */
       
@@ -731,10 +759,10 @@ int mean_field(double nx_i, double nx_f, double ny_i, double ny_f)
       // em[i + j * 101] 
       //  b[i + j * 101] 
 
-      em(i, j)   = (d_1 * d_1 + d_2 * d_2) / (d_3 * d_3);
-      em2(i, j)  = (f_1 * f_1 + f_2 * f_2) / (d_3 * d_3);
-      diff(i, j) = (em2(i, j) - em(i, j)) / em(i, j);
-      b(i, j)    = sqrt(em(i, j));      
+      em[i + j*id]   = (d_1 * d_1 + d_2 * d_2) / (d_3 * d_3);
+      em2[i + j*id]  = (f_1 * f_1 + f_2 * f_2) / (d_3 * d_3);
+      diff[i + j*id] = (em2[i + j*id] - em[i + j*id]) / em[i + j*id];
+      b[i + j*id]    = sqrt(em[i + j*id]);      
     }
   }
   
@@ -748,7 +776,7 @@ int mean_field(double nx_i, double nx_f, double ny_i, double ny_f)
     for(j = 0; j <= i_1; ++j) {
       // [i + j * 101]
       
-      ee += em(i, j);
+      ee += em[i + j*id];
     }
   }
   
@@ -772,7 +800,7 @@ int mean_field(double nx_i, double nx_f, double ny_i, double ny_f)
     i_1 = (int) ny_f;
 	
     for(j = (int) ny_i; j <= i_1; ++j) {
-      fprintf(difference, " %d %d %11.8f \n", i, j, diff(i, j));
+      fprintf(difference, " %d %d %11.8f \n", i, j, diff[i + j*id]);
     }
   }
   

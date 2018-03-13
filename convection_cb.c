@@ -49,8 +49,8 @@ void drawing(FL_OBJECT *ob, long data)
 {
   /* fill-in code for callback */
   
-  potinc();
-  convec_plasma(reynolds_number, vfieldparm, run_time);
+  potinc(nx_f - nx_i, ny_f - ny_i, 50);
+  convec_plasma(reynolds_number, vfieldparm, run_time, nx_f - nx_i, ny_f - ny_i);
   create_gnuplot(run_time);
 
   system("gnuplot -background white prog_gnuplot");
@@ -72,12 +72,12 @@ void streaming(FL_OBJECT *ob, long data)
   system("gnuplot -background white stream_gnuplot");
 }
 
-void make_movie(FL_OBJECT *ob, long data)
+void make_movie(FL_OBJECT *ob, long data, int id, int jd, int runtime)
 {
   /* fill-in code for callback */
 
-  potinc();
-  convec_plasma(reynolds_number, vfieldparm, run_time);
+  potinc(id, jd, runtime);
+  convec_plasma(reynolds_number, vfieldparm, run_time, nx_f - nx_i, ny_f - ny_i);
   create_gnuplot(run_time);
   create_movie(run_time);
 

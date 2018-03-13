@@ -14,7 +14,7 @@ extern void helping(FL_OBJECT *, long);
 extern void vf_p(FL_OBJECT *, long);
 extern void redrawing(FL_OBJECT *, long);
 extern void streaming(FL_OBJECT *, long);
-extern void make_movie(FL_OBJECT *, long);
+extern void make_movie(FL_OBJECT *, long, int, int, int);
 extern void nx_initial(FL_OBJECT *, long);
 extern void nx_final(FL_OBJECT *, long);
 extern void ny_initial(FL_OBJECT *, long);
